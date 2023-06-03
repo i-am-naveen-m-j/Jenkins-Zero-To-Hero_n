@@ -13,7 +13,7 @@ pipeline {
       steps {
         // Clone the GitHub repository
         //git 'https://github.com/your-github-username/your-repo.git'
-        git 'https://github.com/i-am-naveen-m-j/Jenkins-Zero-To-Hero_n/blob/main/my-first-pipeline/Dockerfile'
+        //git 'https://github.com/i-am-naveen-m-j/Jenkins-Zero-To-Hero_n/blob/main/my-first-pipeline/Dockerfile'
         
         // Build the Docker image
         //sh 'docker build -t your-dockerhub-username/your-image-name:v1 .'

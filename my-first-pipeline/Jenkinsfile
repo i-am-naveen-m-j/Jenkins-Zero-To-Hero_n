@@ -11,6 +11,12 @@ pipeline {
     
     stage('Build and Push Image') {
       steps {
+            // Echo the current date
+            sh 'echo $(date)'
+
+            // Echo the result of a command substitution
+            echo "The current directory is: $(pwd)"
+         
         // Clone the GitHub repository
         //git 'https://github.com/your-github-username/your-repo.git'
         //git 'https://github.com/i-am-naveen-m-j/Jenkins-Zero-To-Hero_n/blob/main/my-first-pipeline/Dockerfile'
@@ -25,6 +31,8 @@ pipeline {
         
         // Push the image to Docker Hub
         //sh 'docker push your-dockerhub-username/your-image-name:v1'
+        
+        
       }
     }
   }

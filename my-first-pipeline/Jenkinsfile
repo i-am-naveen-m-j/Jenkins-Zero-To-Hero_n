@@ -15,7 +15,7 @@ pipeline {
             sh 'echo $(date)'
 
             // Echo the result of a command substitution
-            echo "The current directory is: $(pwd)"
+            echo 'The current directory is: $(pwd)'
          
         // Clone the GitHub repository
         //git 'https://github.com/your-github-username/your-repo.git'

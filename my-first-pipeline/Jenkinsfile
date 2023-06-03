@@ -8,5 +8,24 @@ pipeline {
         sh 'node --version'
       }
     }
+    
+    stage('Build and Push Image') {
+      steps {
+        // Clone the GitHub repository
+        //git 'https://github.com/your-github-username/your-repo.git'
+        git 'https://github.com/i-am-naveen-m-j/Jenkins-Zero-To-Hero_n/blob/main/my-first-pipeline/Dockerfile'
+        
+        // Build the Docker image
+        //sh 'docker build -t your-dockerhub-username/your-image-name:v1 .'
+        //sh 'docker build -t naveen782/:v1 .'
+        
+        // Log in to Docker Hub
+        //sh 'docker login -u your-dockerhub-username -p your-dockerhub-password'
+        //sh 'docker login -u your-dockerhub-username -p your-dockerhub-password'
+        
+        // Push the image to Docker Hub
+        //sh 'docker push your-dockerhub-username/your-image-name:v1'
+      }
+    }
   }
 }
